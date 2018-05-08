@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <servlet>
+    <servlet-name> registerc</servlet-name>
+    <servlet-class> controller.registerc </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginc</servlet-name>
+    <servlet-class>controller.loginc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginc</servlet-name>
+    <url-pattern>/loginc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerc</servlet-name>
+    <url-pattern>/registerc </url-pattern>
+  </servlet-mapping>
+  <session-config> <session-timeout>30</session-timeout></session-config>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+</web-app>
